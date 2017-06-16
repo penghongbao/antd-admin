@@ -9,8 +9,8 @@ export default {
   state: {
     user: {},
     menuPopoverVisible: false,
-    siderFold: localStorage.getItem(`${prefix}siderFold`) === 'true',
-    darkTheme: localStorage.getItem(`${prefix}darkTheme`) === 'true',
+    siderFold: false,
+    darkTheme: true,
     isNavbar: document.body.clientWidth < 769,
     navOpenKeys: JSON.parse(localStorage.getItem(`${prefix}navOpenKeys`)) || [],
   },
